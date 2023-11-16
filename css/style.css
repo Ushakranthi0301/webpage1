@@ -1,0 +1,88 @@
+*{
+    
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+.header{
+    text-align: center;
+    color: white;
+    transition: all 0.9s ease-in;
+    
+    background-color: lightgreen;
+    padding: 80px;
+
+}
+.navbar{
+    overflow: hidden;
+    background-color: #333;
+}
+/* style the navigation bar link */
+.navbar a{
+     color: white;
+     float: left;
+     padding: 14px 20px;
+     text-decoration: none;
+     transition: all 0.3s ease-in;
+}
+.navbar a:hover{
+    background-color: white;
+    color: black;
+    transition: all 0.9s;
+}
+.navbar a.login{
+    float: right;
+}
+/* row section */
+.row{
+    display: flex;
+    
+}
+/* col-1 */
+.col-1{
+  flex: 30%;
+  padding: 20px;
+  background-color: #f1f1f1;
+}
+/* col-2 */
+.col-2{
+    flex: 70%;
+    background-color: white;
+    padding: 20px;
+}
+/* footer section */
+footer{
+    color: white;
+    background-color: #333;
+    text-align: center;
+    padding: 20px;
+
+}
+/* responsive -in tablet */
+@media screen and (max-width: 700px){
+    .row{
+        flex-direction: column;
+    }
+    .header{
+
+        background-color: salmon;
+        transition: all 0.9s ease-out;
+    }
+}
+/* responsive in mobile */
+@media screen and (max-width: 400px ){
+    
+    .navbar{
+        background-color: lightslategray;
+        border-bottom: solid 2px black;
+        
+    }
+    .navbar a{
+        float: right;
+        width: 100%;
+        border-bottom: solid 1px black;
+        transition: all 0.9s ease-out;
+    }
+}
